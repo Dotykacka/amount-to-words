@@ -4,14 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".SampleActivity">
 
-    <TextView
-        android:id="@+id/text"
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="1234.56"/>
+
+    <Button
+        android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Hello World!"/>
+        android:layout_marginTop="16dp"
+        android:text="Convert"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

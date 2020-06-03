@@ -1,4 +1,4 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
 public final class Container {
 

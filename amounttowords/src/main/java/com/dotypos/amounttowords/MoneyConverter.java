@@ -1,8 +1,8 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
 import java.math.BigDecimal;
 
-import static cz.jakubturcovsky.amounttowords.Container.polishContainer;
+import static com.dotypos.amounttowords.Container.polishContainer;
 
 public enum MoneyConverter {
 

@@ -1,4 +1,4 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
 import java.util.ArrayList;
 import java.util.Collections;

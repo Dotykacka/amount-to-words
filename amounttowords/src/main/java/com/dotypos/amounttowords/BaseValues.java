@@ -1,12 +1,11 @@
-package cz.jakubturcovsky.amounttowords;
-
-import android.util.SparseArray;
+package com.dotypos.amounttowords;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BaseValues {
 
-    SparseArray<String> baseNumbers();
+    Map<Integer, String> baseNumbers();
 
     List<PluralForms> pluralForms();
 

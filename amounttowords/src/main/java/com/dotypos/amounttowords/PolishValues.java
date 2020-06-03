@@ -1,15 +1,15 @@
-package cz.jakubturcovsky.amounttowords;
-
-import android.util.SparseArray;
+package com.dotypos.amounttowords;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PolishValues implements BaseValues {
 
     @Override
-    public SparseArray<String> baseNumbers() {
-        SparseArray<String> numbers = new SparseArray<>();
+    public Map<Integer, String> baseNumbers() {
+        Map<Integer, String> numbers = new HashMap<>();
         numbers.put(0, "zero");
         numbers.put(1, "jeden");
         numbers.put(2, "dwa");

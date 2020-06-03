@@ -1,4 +1,4 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
 import java.math.BigDecimal;
 import java.util.Locale;

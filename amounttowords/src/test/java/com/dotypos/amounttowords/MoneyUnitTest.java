@@ -1,4 +1,4 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,13 +1,13 @@
-package cz.jakubturcovsky.amounttowords;
+package com.dotypos.amounttowords;
 
-import android.util.SparseArray;
+import java.util.Map;
 
 public class HundredsToWordsConverter implements IntegerToStringConverter {
 
-    private final SparseArray<String> baseValues;
+    private final Map<Integer, String> baseValues;
     private final char twoDigitsNumberSeparator;
 
-    public HundredsToWordsConverter(SparseArray<String> baseValues, char twoDigitsNumberSeparator) {
+    public HundredsToWordsConverter(Map<Integer, String> baseValues, char twoDigitsNumberSeparator) {
         this.baseValues = baseValues;
         this.twoDigitsNumberSeparator = twoDigitsNumberSeparator;
     }
