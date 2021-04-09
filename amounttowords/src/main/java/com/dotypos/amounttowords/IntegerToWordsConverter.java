@@ -24,7 +24,9 @@ public class IntegerToWordsConverter implements IntegerToStringConverter {
         }
 
         List<Integer> valueChunks = numberChunking.chunk(value);
-        List<PluralForms> formsToUse = pluralForms.subList(0, valueChunks.size());
+        // sublist is backed by original collection, thus calling Collection.reverse on a sublist
+        // also reverses items in given range in the original list
+        List<PluralForms> formsToUse = new ArrayList<>(pluralForms.subList(0, valueChunks.size()));
         Collections.reverse(formsToUse);
 
         return joinValueChunksWithForms(valueChunks.iterator(), formsToUse.iterator());
